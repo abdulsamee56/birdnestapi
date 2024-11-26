@@ -107,6 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
 LANGUAGE_CODE = "en-us"
+SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")
 
 TIME_ZONE = "UTC"
 
