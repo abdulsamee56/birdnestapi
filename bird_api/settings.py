@@ -14,13 +14,13 @@ from pathlib import Path
 import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+import os
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-e2u*-@k!474c)2pb+62=di7likg5l0#d!ffquy%amn6n3(+^yq"
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,7 +83,7 @@ DATABASES = {
     }
 }
 
-SECRET_KEY = os.getenv('SECRET_KEY', 'fallback-secret-key')
+
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
